@@ -5,6 +5,12 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
 }
@@ -158,4 +164,38 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+/*BUTTONS*/
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  margin: 1rem 0;
+}
+.button--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn--secondry {
+  background: var(--color-secondry);
+  color: #fff;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 15px;
+  }
 }
