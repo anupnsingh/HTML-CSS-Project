@@ -106,6 +106,7 @@ a {
 
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -185,9 +186,16 @@ a {
   color: #fff;
 }
 
+.button--primary:hover {
+  background: #3a8ffd;
+}
 .btn--secondry {
   background: var(--color-secondry);
   color: #fff;
+}
+
+.btn--secondry:hover {
+  background: #00c8eb;
 }
 
 .btn--block {
@@ -195,6 +203,24 @@ a {
   display: inline-block;
 }
 
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background: #ec3000;
+}
+.btn--outline {
+  background: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 15px;
@@ -257,4 +283,53 @@ a {
 .card--secondry .card__header {
   background: var(--color-primary);
   color: #fff;
+}
+
+.card--secondry .badge--secondry {
+  background: #02cdf1;
+}
+
+/*PLANS*/
+
+.plan__name {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+}
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+  .plan__description {
+    font-size: 1.7rem;
+  }
 }
