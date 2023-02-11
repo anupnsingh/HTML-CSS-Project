@@ -12,26 +12,24 @@
 
 <body>
 
-    <div class="collapsible collapsible--expanded">
-        <div class="collapsible__header">
 
-            <h2 class="collapsible__heading">Item 1</h2>
+    <nav class="nav collapsible">
+        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="logo"></a>
+        <svg class="icon icon--white nav__toggler">
+            <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
 
-            <svg class="icon icon--white collapsible__chevron">
-                <use xlink:href="images/sprite.svg#chevron"></use>
-            </svg>
-
-        </div>
-        <div class="collapsible__content">
-
-
-            Jack and Jill wenr up the hill
-        </div>
+        <ul class="List nav__list collapsible__content">
+            <li class="nav__item"><a href="#">Hositing</a></li>
+            <li class="nav__item"><a href="#">VPN </a></li>
+            <li class="nav__item"><a href="#">Domain</a></li>
+            <li class="nav__item"><a href="#">Pricing</a></li>
+        </ul>
 
 
-    </div>
-
+    </nav>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
